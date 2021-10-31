@@ -1,6 +1,10 @@
 .jumbotron {
   padding-top: 6rem;
-  background-color: #e2f38481;
+  background-image: url("img/jimbo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: -200px;
+  /* background-color: #e2f38481; */
 }
 
 #projects {
