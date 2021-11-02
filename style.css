@@ -1,3 +1,7 @@
+.navbar-brand {
+  font-family: "Arial Narrow Bold";
+}
+
 .jumbotron {
   padding-top: 6rem;
   background-image: url("img/jimbo.jpg");
@@ -10,7 +14,9 @@
 .jumbotron h1,
 .jumbotron p {
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  font-family: monospace;
 }
+
 #projects {
   background-color: #e2f38481;
 }
