@@ -43,6 +43,6 @@ section {
 
   .display-4,
   .lead {
-    color: black !important;
+    color: black;
   }
 }
