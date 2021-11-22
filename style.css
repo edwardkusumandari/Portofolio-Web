@@ -3,26 +3,6 @@
   letter-spacing: 2px;
 }
 
-@media only screen and (min-width: 400px) {
-  .jumbotron {
-    background-image: url("img/jimbo.jpg") !important;
-    background-attachment: fixed;
-    background-size: cover;
-    padding-top: 6rem;
-  }
-
-  .jumbotron h1,
-  .jumbotron p {
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-    font-family: monospace;
-  }
-
-  .display-4,
-  .lead {
-    color: black !important;
-  }
-}
-
 .jumbotron {
   padding-top: 6rem;
   background-image: url("img/small\ jimbo.jpg");
@@ -45,4 +25,24 @@
 
 section {
   padding-top: 5rem;
+}
+
+@media only screen and (min-width: 400px) {
+  .jumbotron {
+    background-image: url("img/jimbo.jpg") !important;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 6rem;
+  }
+
+  .jumbotron h1,
+  .jumbotron p {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    font-family: monospace;
+  }
+
+  .display-4,
+  .lead {
+    color: black !important;
+  }
 }
