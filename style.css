@@ -8,7 +8,7 @@
   background-image: url("img/small\ jimbo.jpg");
   background-attachment: fixed;
   background-size: cover;
-  background-position-y: -110px;
+  /* background-position-y: -110px; */
   /* background-color: #e2f38481; */
 }
 
@@ -33,6 +33,7 @@ section {
     background-attachment: fixed;
     background-size: cover;
     padding-top: 6rem;
+    background-position-y: 110px;
   }
 
   .jumbotron h1,
