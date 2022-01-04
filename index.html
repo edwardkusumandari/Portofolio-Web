@@ -11,6 +11,9 @@
     <!-- icon Bootstap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- my css -->
     <link rel="stylesheet" href="style.css" />
 
@@ -48,7 +51,7 @@
     <section class="jumbotron text-center">
       <img src="img/icon.jpg" alt="Edward Kusumandari" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Edward Kusumandari</h1>
-      <p class="lead">Physical Therapy | Enterprenure</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -68,10 +71,10 @@
           </div>
         </div>
         <div class="row justify-content-center font fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1500">
             <p>Saya adalah seorang fisioterapi, yang berkewajiban untuk memberikan pelayanan kesehatan sesuai dengan keilmuan yang saya miliki.</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1100">
             <p>I am a physiotherapist, who is obliged to provide health services according to my knowledge.</p>
           </div>
         </div>
@@ -96,7 +99,7 @@
         </div>
         <div class="row">
           <div class="col-md-4 mb=4">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
               <img src="img/physio.jpg" class="card-img-top" alt="project1" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's conten.</p>
@@ -104,7 +107,7 @@
             </div>
           </div>
           <div class="col-md-4 mb=3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
               <img src="img/maraton.jpg" class="card-img-top" alt="project1" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -112,7 +115,7 @@
             </div>
           </div>
           <div class="col-md-4 mb=3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
               <img src="img/export.jpg" class="card-img-top" alt="project1" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -121,6 +124,38 @@
           </div>
         </div>
       </div>
+      <section id="my-project">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Project</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="project-box">
+                <h4 class="project-name">Fisioterapi</h4>
+                <img src="img/physio.png" alt="physio" class="project-img" />
+                <a href="#" class="btn btn-light project-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="project-box">
+                <h4 class="project-name">Running</h4>
+                <img src="img/running.png" alt="physio" class="project-img" />
+                <a href="#" class="btn btn-light project-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="project-box">
+                <h4 class="project-name">container</h4>
+                <img src="img/physio.png" alt="physio" class="project-img" />
+                <a href="#" class="btn btn-light project-detail-button">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -180,14 +215,30 @@
     <!-- footer -->
     <footer class="bg-warning text-white text-center pb-5 font-monospace fs-5">
       <!-- <p>Created With <i class="bi bi-heart-fill text-danger"></i> by <a href="edwardkusumandari.github.io" class="text-white fw-bolt">Edward Kusumandari</a></p> -->
-      <p>Created by <a href="edwardkusumandari.my.id" class="text-white fw-bolt">Edward Kusumandari</a></p>
+      <p>Created by <a href="#" class="text-white fw-bolt">Edward Kusumandari</a></p>
     </footer>
     <!-- akhir footer -->
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', { duration: 2, delay: 1.5, text: 'Physical Therapy | Enterprenure' });
+      gsap.from('.jumbotron img', { duration: 1, y: -100, opacity: 0, ease: 'bounce' });
+      gsap.from('.navbar', { duration: 1.5 y: '-100%', opacity: 0, ease: 'bounce'})
+    </script>
 
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbxLRWxJSBUvpVIrBbqpO6gRSI2OpJtdoZmtFEsve3rJFozmgW0TiBY1GUNH8iqj4qU/exec";
@@ -214,6 +265,15 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".project-box"), {
+        max: 35,
+        speed: 1000,
+        glare: true,
       });
     </script>
   </body>
