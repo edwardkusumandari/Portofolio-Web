@@ -27,6 +27,13 @@ section {
   padding-top: 5rem;
 }
 
+.gallery-img {
+  width: 100%;
+}
+
+#gallery .row > * {
+  padding: 0;
+}
 /* my project section */
 .project-box {
   position: relative;
@@ -108,7 +115,7 @@ section {
   top: 49%;
   left: 50%;
   transform: translate3d(-50%, -52%, 100px);
-  max-width: 400px;
+  max-width: 310px;
   transition: 0.5s;
 }
 

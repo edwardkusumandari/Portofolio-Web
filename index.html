@@ -148,7 +148,7 @@
             </div>
             <div class="col-md-6 col-lg-4 mb-3">
               <div class="project-box">
-                <h4 class="project-name">container</h4>
+                <h4 class="project-name">Ekspor</h4>
                 <img src="img/physio.png" alt="physio" class="project-img" />
                 <a href="#" class="btn btn-light project-detail-button">Show Details</a>
               </div>
@@ -165,6 +165,70 @@
       </svg>
     </section>
     <!-- akhir project -->
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/galery/1.jpg" alt="gambar 1" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/galery/2.jpg" alt="gambar 2" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/galery/3.jpg" alt="gambar 3" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/galery/4.jpg" alt="gambar 4" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/galery/5.jpg" alt="gambar 5" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/galery/6.jpg" alt="gambar 6" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/galery/7.jpg" alt="gambar 7" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/galery/8.jpg" alt="gambar 8" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/galery/9.jpg" alt="gambar 9" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/galery/10.jpg" alt="gambar 10" class="img-fluid gallery-img" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Gallery -->
 
     <!-- contact -->
     <section id="contact">
@@ -225,6 +289,12 @@
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+      const galleryImage = document.querySelectorAll(".gallery-img");
+      galleryImage.forEach((img, i) => {
+        img.dataset.aos = "fade-down";
+        img.dataset.aosDelay = i * 100;
+        img.dataset.aosDuration = 1100;
+      });
       AOS.init({
         once: true,
       });
